@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A responsive website shows it's content based on the available browser space. If you were to open said webpage on a desktop and change the browser size the conent would move dynamically to arrange itself
+	
+Adaptive design has multiple fixed layout sizes. When a website detects the available space it selects the layout most appropriate for the screen. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is when the developer starts a website with the mobile version in mind first and then scales it up to the desktop version.
+
+Desktop first is when the developer starts a website with the desktop version first then eventually scales it down to mobile.
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+62.5% makes the font size = to 10px. therefore, 1 rem would equal 10px. it makes it easier to keep track of things if the multiple are of 10 instead of 16. it can also serve as fallback for older browsers that don't support the REM unit. such as IE8, Firefox 3.5, Safari 4 and Opera 11
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessors let you streamline designing of your webpage and give you more power and control over your css. a preprocessor uses features such as nesting and mixins in order to make you code more readable so you won't lose track of what you're trying to do.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting is my favorite concept so far. It makes everything so much easier to read and manage instead of making a new section for every little thing in the CSS file. parametric mixins are a pain still but I think I'm getting better.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
