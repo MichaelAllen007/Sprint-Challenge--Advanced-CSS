@@ -9,6 +9,7 @@
 
 .mixin-btn(@background: @btn-bg-color, @btn-font: @white) {
     background: @btn-bg-color;
+    border: 1px solid @btn-bg-color;
     color: @white;
     font-size: 1.4em;
     cursor: pointer;
@@ -19,8 +20,14 @@
 
         &:hover{
             background: white;
-            color: black;
             border: 1px solid black;
+
+            h4{
+                color: black;
+                animation: flickerAnimation 2s infinite;
+                .ani-flicker-mixin;
+            }
+            
         }
 }
 
@@ -52,10 +59,18 @@
         40% {-webkit-transform: translateY(-30px) }
         60% {-webkit-transform: translateY(-20px);}
     } 
-    
+
     @keyframes bounce {
         0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
         40% {transform: translateY(-30px);}
         60% {transform: translateY(-20px);}
     }
+}
+
+.ani-flicker-mixin() {
+    @keyframes flickerAnimation{
+        0%   { opacity:1; }
+        50%  { opacity:0.25; }
+        100% { opacity:1; }
+      }
 }
